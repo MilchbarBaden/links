@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "FredokaOne";
+    src: url(https://milchbarbaden.github.io/links/fonts/FredokaOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "FamiljenGrotesk";
+    src: url(https://milchbarbaden.github.io/links/fonts/FamiljenGrotesk-Regular.ttf) format("truetype");
+}
+
+a {
+    color: #60439a;
+}
+
+a:hover {
+    color: #fdbc48;
+}
+
+/* Title */
+
+body {
+    background-color: #6ac071;
+}
+
+.page-header {
+    background-color: #60439a;
+    padding: 5px 6rem;
+    text-align: center;
+}
+
+.page-title {
+    color: #6ac071;
+    font-family: "FredokaOne", sans-serif;
+    font-size: 4.8rem;
+    margin: 2rem 0;
+}
+
+.page-tagline {
+    color: #fdbc48;
+    font-family: "FamiljenGrotesk", sans-serif;
+    font-size: 4.2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 800px) {
+    .page-header {
+        padding: 1rem 2rem;
+    }
+
+    .page-title {
+        font-size: 2.25rem;
+    }
+
+    .page-tagline {
+        font-size: 2rem;
+    }
+}
+
+/* Links */
+
+#content {
+    width: 425px;
+    margin: 2rem auto;
+}
+
+.content-link {
+    display: block;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    width: calc(425px - 4rem);
+
+    font-size: 1.8rem;
+    font-family: "FamiljenGrotesk", sans-serif;
+    text-decoration: none;
+
+    color: #6ac071;
+    background-color: #60439a;
+}
+
+.content-link img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+    vertical-align: bottom;
+    filter: invert(61%) sepia(67%) saturate(298%) hue-rotate(75deg) brightness(97%) contrast(88%);
+}
+
+.content-link:hover {
+    color: #fdbc48;
+}
+
+.content-link:hover img {
+    filter: invert(94%) sepia(14%) saturate(4164%) hue-rotate(321deg) brightness(102%) contrast(102%);
+}
+
+#content-map {
+    width: 425px;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    #content {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .content-link {
+        width: calc(100% - 6rem);
+        font-size: 1.2rem;
+    }
+
+    .content-link img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    #content-map {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content-map iframe {
+        width: calc(100% - 2rem);
+    }
+}
