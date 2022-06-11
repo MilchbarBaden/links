@@ -12,7 +12,8 @@ a {
     color: #60439a;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: #fdbc48;
 }
 
@@ -75,6 +76,8 @@ body {
 
     color: #6ac071;
     background-color: #60439a;
+
+    transition: 0.25s;
 }
 
 .content-link img {
@@ -82,15 +85,22 @@ body {
     height: 1.8rem;
     margin-right: 1rem;
     vertical-align: bottom;
+
     filter: invert(61%) sepia(67%) saturate(298%) hue-rotate(75deg) brightness(97%) contrast(88%);
+    transition: 0.25s;
 }
 
-.content-link:hover {
-    color: #fdbc48;
+.content-link:hover,
+.content-link:focus {
+    color: #60439a;
+    background-color: #fdbc48;
+    transform: translateY(-0.1em) translateX(0.1em);
 }
 
-.content-link:hover img {
-    filter: invert(94%) sepia(14%) saturate(4164%) hue-rotate(321deg) brightness(102%) contrast(102%);
+.content-link:hover img,
+.content-link:focus img {
+    filter: invert(29%) sepia(18%) saturate(3015%) hue-rotate(226deg) brightness(90%) contrast(87%);
+    /* filter: invert(94%) sepia(14%) saturate(4164%) hue-rotate(321deg) brightness(102%) contrast(102%); */
 }
 
 #content-map {
